@@ -11,7 +11,7 @@
       input {
         width: 5em;
       }
-      input, div, button {
+      input, div, button, select{
         font-size:large;
       }
     </style>
@@ -19,12 +19,16 @@
   <body>
     <h1>Silly Calculator</h1>
     <input type="text" name="" id="num1" value="1" />
-    <div>+</div>
-    <input type="text" name="" id="num2" value="1" />
+    <select id="operator" size="1">
+      <option value="add">+</option>
+      <option value="substract">-</option>
+    </select>
+    <input type="text" id="num2" value="1" />
     <div>=</div>
-    <input type="text" name="" id="ans" value="2" />
+    <input type="text" id="ans" value="2" />
     <button id="go_btn">Go!</button>
 
     <script src="calculator.js" type="text/javascript" charset="utf-8"></script>
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>

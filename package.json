@@ -1,0 +1,14 @@
+{
+  "name": "auto_testing_example",
+  "version": "0.0.1",
+  "description": "Demostrates why auto testing is important",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "author": "Askeing Yen & Shing Lyu",
+  "license": "MPLv2",
+  "dependencies": {
+    "mocha": "~2.3.2"
+  },
+  "repository":{}
+}
