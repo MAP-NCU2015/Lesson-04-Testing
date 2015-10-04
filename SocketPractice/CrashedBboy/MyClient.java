@@ -30,8 +30,8 @@ public class MyClient {
 
 		/* Send messgae */
 		Scanner scanner = new Scanner(System.in);
+		System.out.println("Type anything below:");
 		while(true) {
-			System.out.print("Message:");
 			try {
 				writer.println(scanner.nextLine());
 				writer.flush();
@@ -46,7 +46,7 @@ public class MyClient {
 			String message;
 			try{
 				while ((message = reader.readLine()) != null){
-					System.out.println(message);
+					System.out.println("Someone:"+message);
 				}
 			}catch(Exception e){
 				e.printStackTrace();

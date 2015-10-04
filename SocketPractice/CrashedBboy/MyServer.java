@@ -4,12 +4,14 @@ import java.util.*;
 
 public class MyServer{
 	private static Vector output;
+	final static int PORT = 8888;
 
 	public static void main (String args[]){
 		output = new Vector();          
-		try{
-			ServerSocket serverSock = new ServerSocket(8888);  
-			while(true){
+		try {
+			ServerSocket serverSock = new ServerSocket(PORT);  
+			System.out.println("Listen on " + PORT + " port ...");
+			while (true) {
 				/* accept() method blocks until a connection is made */
 				Socket s = serverSock.accept();    
 				PrintStream writer = new PrintStream(s.getOutputStream());  
@@ -19,7 +21,7 @@ public class MyServer{
 				t.start();           
 				System.out.println(s.getLocalSocketAddress() + " Has " + (t.activeCount()-1) + " connections");               
 			} 
-		}catch(Exception e){
+		} catch (Exception e) {
 			e.printStackTrace(System.out);
 		}
 	}
@@ -30,12 +32,12 @@ public class MyServer{
 		BufferedReader reader;  
 		Socket sock;            
 
-		public Process(Socket s){
+		public Process (Socket s){
 			try{
 				sock = s;
 				InputStreamReader isReader = new InputStreamReader(sock.getInputStream()); 
 				reader = new BufferedReader(isReader);
-			}catch(Exception e){
+			} catch (Exception e) {
 				e.printStackTrace(System.out);
 			} 
 		}
@@ -44,8 +46,8 @@ public class MyServer{
 			String message;
 			try {
 				while ((message=reader.readLine()) != null){   
-					System.out.println("收到"+message);
-					tellApiece(message);
+					System.out.println("[Receive]" + message);
+					broadcast(message);
 				}
 			} catch (Exception e){
 				e.printStackTrace(System.out);
@@ -53,7 +55,7 @@ public class MyServer{
 		}
 
 		/* Tell everyone */
-		public void tellApiece(String message){
+		public void broadcast(String message){
 			Iterator it = output.iterator(); 
 			while(it.hasNext()){          
 				try{
