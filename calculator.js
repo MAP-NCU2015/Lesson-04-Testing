@@ -11,5 +11,16 @@ function substract(num1, num2){
   return num1 - num2;
 }
 
+function multi(num1, num2){
+  return num1 * num2;
+}
+
+function divide(num1, num2){
+  return num1 / num2;
+}
+
 module.exports.add = add;
+module.exports.substract = substract;
+module.exports.multi = multi;
+module.exports.divide = divide;
 module.exports.isNumber = isNumber;
