@@ -16,12 +16,14 @@ describe('Calculator', function() {
                 assert.equal('7', cal.divide(28, 4));
             })
     })
+	
     //Negative path
 describe('ERROR', function() {
     it('generates an false', function() {
         assert.equal(false, cal.isNumber('1DA'));
     })
 })
+
 describe('Sinon', function() {
     it('stubbing something', function() {
         var callback = sinon.stub();
