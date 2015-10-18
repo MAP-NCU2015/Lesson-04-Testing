@@ -25,7 +25,7 @@ window.onload = function(){
 			ans.value = divide(num1, num2);
 			break;
 		default:
-		      alert("Bad operator!");	
+		    alert("Bad operator!");	
 	}
   }
 }
