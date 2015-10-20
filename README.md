@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# ncu2015-ToolBox
+A project of ToolBox
+=======
 # Testing Concepts, Framework and Strategies
 
 [![Build Status](https://travis-ci.org/MAP-NCU2015/Lesson-04-Testing.svg)](https://travis-ci.org/MAP-NCU2015/Lesson-04-Testing)
@@ -66,3 +70,4 @@ For more detail, please see the following articles.
 * https://help.github.com/articles/managing-branches-in-your-repository/
 * https://help.github.com/articles/creating-a-pull-request/
 * https://help.github.com/articles/using-pull-requests/
+>>>>>>> 578f386cdfc85fbd576ba57a3fc87b7ce425761a
