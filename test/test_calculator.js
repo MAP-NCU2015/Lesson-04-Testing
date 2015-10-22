@@ -1,6 +1,6 @@
 var assert = require('assert');
 var cal = require('../calculator.js');
-var sinon = require('../sinon.js');
+var sinon = require('../node_modules/sinon/lib/sinon.js');
 
 describe('Calculator', function() {
             it('add', function() {
@@ -16,8 +16,7 @@ describe('Calculator', function() {
                 assert.equal('7', cal.divide(28, 4));
             })
     })
-    //Negative path
-describe('ERROR', function() {
+describe('Negative Path', function() {
     it('generates an false', function() {
         assert.equal(false, cal.isNumber('1DA'));
     })
