@@ -1,6 +1,6 @@
 var assert = require('assert');
 var cal = require('../calculator.js');
-var sinon = require('../node_modules/sinon/lib/sinon.js');
+var sinon = require('../sinon.js');
 
 describe('Calculator', function() {
             it('add', function() {
