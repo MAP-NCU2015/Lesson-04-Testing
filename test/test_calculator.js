@@ -12,7 +12,7 @@ describe('Calculator', function(){
 describe('Calculator', function(){
   describe('mul', function(){
     it('mul', function(){
-      assert.equal('20', cal.add(10, 2));
+      assert.equal('20', cal.mul(10, 2));
     })
   })
 })
