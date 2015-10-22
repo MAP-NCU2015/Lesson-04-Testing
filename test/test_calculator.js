@@ -7,10 +7,10 @@ describe('Calculator', function() {
                 assert.equal('2', cal.add(1, 1));
             })
             it('substract', function() {
-                assert.equal('3', cal.substract(5, 2));
+                assert.equal('10', cal.substract(34.4, 24.4));
             })
             it('multi', function() {
-                assert.equal('30', cal.multi(3, 10));
+                assert.equal('8', cal.multi(0.8, 10));
             })
             it('divide', function() {
                 assert.equal('7', cal.divide(28, 4));
@@ -23,7 +23,10 @@ describe('ERROR', function() {
     })
 })
 describe('Sinon', function() {
-    it('stubbing something', function() {
-        var callback = sinon.stub();
+    it('stubbing add function', function() {
+		var stub = sinon.stub().returns(42);
+		var proxy = cal.add(stub(), 5);
+			
+		assert.equal(proxy, 47);
     })
 })
