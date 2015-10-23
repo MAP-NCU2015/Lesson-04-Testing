@@ -11,5 +11,11 @@ function substract(num1, num2){
   return num1 - num2;
 }
 
-module.exports.add = add;
-module.exports.isNumber = isNumber;
+function multiplication(num1, num2){
+  return num1 * num2;
+}
+
+exports.substract = substract;
+exports.add = add;
+exports.isNumber = isNumber;
+exports.multiplication = multiplication;
