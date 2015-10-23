@@ -1,6 +1,6 @@
 var assert = require('assert');
 var cal = require('../calculator.js');
-var sinon = require('../node_modules/sinon/lib/sinon.js');
+var sinon = require('sinon');
 
 describe('Calculator', function() {
             it('add', function() {
@@ -24,8 +24,8 @@ describe('Negative Path', function() {
 describe('Sinon', function() {
     it('stubbing add function', function() {
 		var stub = sinon.stub().returns(42);
-		var proxy = cal.add(stub(), 5);
+		var proxy = cal.multi(stub(), 5);
 			
-		assert.equal(proxy, 47);
+		assert.equal(210, proxy);
     })
 })
