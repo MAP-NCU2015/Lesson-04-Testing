@@ -22,7 +22,7 @@ describe('Calculator', function(){
   
   describe('Not a number', function(){
 	  it('failed add', function(){
-      assert.equal("ERROR", cal.add(a, b));
+      assert.equal("ERROR", cal.add(1.1.2, 1));
     })
   })
 })
