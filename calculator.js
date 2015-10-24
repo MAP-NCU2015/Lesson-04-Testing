@@ -19,7 +19,7 @@ function div(num1, num2){
   return num1 / num2;
 }
 module.exports.add = add;
-module.exports.add = substract;
-module.exports.add = mul;
-module.exports.add = div;
+module.exports.substract = substract;
+module.exports.mul = mul;
+module.exports.div = div;
 module.exports.isNumber = isNumber;
