@@ -15,8 +15,5 @@ describe('Calculator', function(){
 	it('divide', function(){
       assert.equal('2', cal.divide(10, 5));
     })
-	it('divide', function(){
-      assert.equal('ERROR', cal.divide(1, 0));
-    })
   })
 })
