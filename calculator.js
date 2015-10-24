@@ -19,7 +19,7 @@ function divide(num1, num2){
   return num1 / num2;
 }
 
-function module (num1, num2){
+function mod (num1, num2){
   return num1 % num2;
 }
 
@@ -27,5 +27,5 @@ module.exports.add = add;
 module.exports.substract = substract;
 module.exports.multiply = multiply;
 module.exports.divide = divide;
-module.exports.module = module;
+module.exports.mod = mod;
 module.exports.isNumber = isNumber;

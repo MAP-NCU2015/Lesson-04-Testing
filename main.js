@@ -22,8 +22,8 @@ window.onload = function(){
 	else if (operator == "divide"){
       document.getElementById('ans').value = divide(num1, num2);
     }
-	else if (operator == "module"){
-      document.getElementById('ans').value = module(num1, num2);
+	else if (operator == "mod"){
+      document.getElementById('ans').value = mod(num1, num2);
     }
     else {
       alert("Bad operator!")
