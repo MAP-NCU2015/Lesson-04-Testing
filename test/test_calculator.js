@@ -7,4 +7,10 @@ describe('Calculator', function(){
       assert.equal('2', cal.add(1, 1));
     })
   })
+  
+  describe('substract', function(){
+	it('substract',function(){
+	   assert.equal('1' , cal.substract(2,1));
+	})
+  })
 })
