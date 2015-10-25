@@ -1,4 +1,5 @@
 var assert = require('assert');
+var sinon  = require('sinon');
 var cal = require('../calculator.js')
 
 describe('Calculator', function(){
@@ -29,6 +30,16 @@ describe('Calculator', function(){
   describe('add', function(){
     it('add correct value', function(){
       assert.equal('2', cal.add(1, 1));
+    })
+    it('add random value', function(){
+      var generator = Math.random;
+      var number = generator();
+      assert.equal(1+number, cal.add(1, number));
+    })
+    it('add stub random value', function(){
+      var generator = sinon.stub().returns(5);
+      var number = generator();
+      assert.equal('6', cal.add(1, number));
     })
   })
   describe('substract', function(){
