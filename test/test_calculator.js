@@ -13,4 +13,16 @@ describe('Calculator', function(){
 	   assert.equal('1' , cal.substract(2,1));
 	})
   })
+  
+  describe('mul', function(){
+	it('mul',function(){
+	   assert.equal('6' , cal.mul(2,3));
+	})
+  })
+  
+  describe('div', function(){
+	it('div',function(){
+	   assert.equal('0.5' , cal.div(1,2));
+	})
+  })
 })
