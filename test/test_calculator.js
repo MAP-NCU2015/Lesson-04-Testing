@@ -18,6 +18,10 @@ describe('Calculator', function(){
     it('isNumber', function(){
       assert.equal(true, cal.isNumber('3'));
     })
+
+    it('isNotNumber', function(){
+      assert.equal(false, cal.isNumber('3d'));
+    })
   })
 
   describe('multiply', function(){
