@@ -19,4 +19,10 @@ describe('Calculator', function(){
       assert.equal(true, cal.isNumber('3'));
     })
   })
+
+  describe('multiply', function(){
+    it('multiply', function(){
+      assert.equal(6, cal.multiply(3, 2));
+    })
+  })
 })
