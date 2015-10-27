@@ -10,7 +10,10 @@ node_js:
 
 before_install:
   - "npm install -g mocha"
+  - "npm install sinon"
   - "npm install chai"
 
 notifications:
   email: false
+
+  
