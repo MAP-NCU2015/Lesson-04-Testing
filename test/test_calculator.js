@@ -11,13 +11,13 @@ describe('Calculator', function(){
 	it('mul', function(){
       assert.equal('20', cal.mul(10, 2));
     })
-	it('did', function(){
-      assert.equal('5', cal.did(10, 2));
+	it('div', function(){
+      assert.equal('5', cal.div(10, 2));
     })  
 })
 
 describe('negative path tests', function(){  
     it('false', function(){
-      assert.equal('false', cal.isNumber(AAA));
+      assert.equal('false', cal.isNumber('AAA'));
     })
 })
