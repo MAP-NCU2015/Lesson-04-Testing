@@ -18,6 +18,6 @@ describe('Calculator', function(){
 
 describe('negative path tests', function(){  
     it('false', function(){
-      assert.equal('false', cal.isNumber('AAA'));
+      assert.equal(false, cal.isNumber('AAA'));
     })
 })
