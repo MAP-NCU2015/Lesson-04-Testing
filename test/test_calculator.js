@@ -19,7 +19,12 @@ describe('Calculator', function(){
   })
   describe('isNumber', function(){
     it('isNumber', function(){
-      assert.equal(true, cal.isNumber(1));
+      assert.equal(true, cal.isNumber('1'));
+    })
+  })
+  describe('isNotNumber', function(){
+    it('isNotNumber', function(){
+      assert.equal(false, cal.isNumber('1a'));
     })
   })
 })
