@@ -19,4 +19,16 @@ describe('Calculator', function(){
       assert.equal(true, cal.isNumber('64'))
     })
   })
+
+  describe('multiply', function () {
+    it('multiply', function () {
+      assert.equal('30', cal.multiply(3, 10))
+    })
+  })
+
+  describe('divide', function () {
+    it('divide', function () {
+      assert.equal('2', cal.divide(4, 2))
+    })
+  })
 })
