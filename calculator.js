@@ -12,4 +12,5 @@ function substract(num1, num2){
 }
 
 module.exports.add = add;
+module.exports.substract = substract;
 module.exports.isNumber = isNumber;

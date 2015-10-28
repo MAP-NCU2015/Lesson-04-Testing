@@ -7,4 +7,14 @@ describe('Calculator', function(){
       assert.equal('2', cal.add(1, 1));
     })
   })
+  describe('substract', function(){
+    it('substract', function(){
+      assert.equal('0', cal.substract(1, 1));
+    })
+  })
+  describe('isNumber', function(){
+    it('isNumber', function(){
+      assert.equal(true, cal.isNumber(1));
+    })
+  })
 })
