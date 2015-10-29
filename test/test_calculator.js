@@ -12,7 +12,7 @@ describe('Calculator', function(){
     })
 	describe('multiply', function(){
     it('multiply', function(){
-      assert.equal('3.6', cal.multiply(3, 1.2));
+      assert.equal('3.75', cal.multiply(3, 1.25));
     })
 	describe('divide', function(){
     it('divide', function(){
