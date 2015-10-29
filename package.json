@@ -10,5 +10,8 @@
   "dependencies": {
     "mocha": "~2.3.2"
   },
-  "repository":{}
+  "repository": {},
+  "devDependencies": {
+    "sinon": "^1.17.1"
+  }
 }
