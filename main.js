@@ -1,4 +1,10 @@
 window.onload = function(){
+
+  document.getElementById('random_btn').onclick = function(){
+
+      document.getElementById('num1').value = random();
+  }
+
   document.getElementById('go_btn').onclick = function(){
     var num1Str = document.getElementById('num1').value;
     var num2Str = document.getElementById('num2').value;
@@ -15,6 +21,12 @@ window.onload = function(){
     }
     else if (operator == "substract"){
       document.getElementById('ans').value = substract(num1, num2);
+    }
+    else if (operator == "multiply"){
+      document.getElementById('ans').value = multiply(num1, num2);
+    }
+    else if (operator == "devide"){
+      document.getElementById('ans').value = devide(num1, num2);
     }
     else {
       alert("Bad operator!")
