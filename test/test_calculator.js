@@ -59,10 +59,9 @@ describe('Calculator', function(){
     })
     describe('sinon_test',function(){
         it('Sinon test',function(){
-        var stub = sinon.stub().returns(39);
-        var somenumber=stub();
+        var stub = sinon.stub(Math,"random").returns(39);
 
-        assert.equal(39,cal.mul(1,somenumber));
+        assert.equal(39,cal.mul(Math.random(),1));
         })
     })
 })
