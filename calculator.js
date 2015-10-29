@@ -20,4 +20,6 @@ function divide(num1, num2){
 }
 
 module.exports.add = add;
+module.exports.mult = mult;
+module.exports.divide = divide;
 module.exports.isNumber = isNumber;
