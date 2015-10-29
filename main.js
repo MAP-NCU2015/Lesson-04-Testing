@@ -16,8 +16,17 @@ window.onload = function(){
     else if (operator == "substract"){
       document.getElementById('ans').value = substract(num1, num2);
     }
+    else if (operator == "multiply") {
+		document.getElementById('ans').value = multiply(num1, num2);    
+    }
+    else if (operator == "divide") {
+		document.getElementById('ans').value = divide(num1, num2);    
+    }
     else {
       alert("Bad operator!")
     }
+  }
+  document.getElementById('getRandom').onclick = function () {
+  	document.getElementById('num1').value = getRandom();
   }
 }
