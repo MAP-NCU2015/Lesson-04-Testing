@@ -27,7 +27,7 @@ describe('Calculator', function(){
       assert.equal('2', cal.mul(1, 2));
     })
 	it('mul-negative', function(){
-	  assert.equal('-1', cal.mul(-1,1));
+	  assert.equal('-1', cal.mul(-1, 1));
 	})
   })
 })
@@ -37,7 +37,7 @@ describe('Calculator', function(){
       assert.equal('3', cal.div(3, 1));
     })
 	it('div-negative', function(){
-	  assert.equal('-3', cal.mul(-1,1));
+	  assert.equal('-3', cal.mul(3, -1));
 	})
   })
 })
