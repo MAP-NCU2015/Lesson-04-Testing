@@ -50,7 +50,7 @@ describe('Calculator', function(){
 
     describe('negative_test', function(){
         it('shold be false', function(){
-            assert.equal('1', cal.add(2, 1));
+            assert.equal(false, cal.isNumber('1a');
         })
     })
     describe('sinon_test',function(){
