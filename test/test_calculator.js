@@ -12,6 +12,10 @@ describe('Calculator', function(){
         it('add_neg', function(){
             assert.equal('-2', cal.add(-1,-1));
         })
+        it('add_neg', function(){
+            assert.equal('-2', cal.add(-1,-1));
+        })
+
     })
     describe('sub', function(){
         it('sub', function(){
@@ -50,7 +54,7 @@ describe('Calculator', function(){
 
     describe('negative_test', function(){
         it('shold be false', function(){
-            assert.equal(false, cal.isNumber('1a');
+            assert.equal(false, cal.isNumber('a'));
         })
     })
     describe('sinon_test',function(){
