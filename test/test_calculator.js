@@ -23,6 +23,11 @@ describe('Calculator', function () {
                 assert.equal('2.511', cal.add(2.4, .111));
             })
         })
+        describe('addexponential', function () {
+            it('add', function () {
+                assert.equal('8', cal.add(0, 2 ^ 3));
+            })
+        })
     })
     describe('sub', function () {
         describe('subtractpositive', function () {
