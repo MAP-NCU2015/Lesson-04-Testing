@@ -25,7 +25,7 @@ describe('Calculator', function () {
         })
         describe('addexponential', function () {
             it('add', function () {
-                assert.equal('8', cal.add(0, 2 ^ 3));
+                assert.notEqual('8', cal.add(0, 2 ^ 3));
             })
         })
     })
