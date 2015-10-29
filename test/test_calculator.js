@@ -18,6 +18,10 @@ describe('Calculator', function(){
     it('check if input is a number', function () {
       assert.equal(true, cal.isNumber('64'))
     })
+
+    it('know the input are not numbers', function () {
+      assert.equal(false, cal.isNumber('56a'))
+    })
   })
 
   describe('multiply', function () {
