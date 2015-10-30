@@ -23,3 +23,4 @@ describe('Calculator', function(){
 	      assert.equal(true, cal.isNumber(1));
    })
 })
+}
