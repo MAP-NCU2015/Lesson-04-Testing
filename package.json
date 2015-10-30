@@ -8,12 +8,7 @@
   "author": "Askeing Yen & Shing Lyu",
   "license": "MPLv2",
   "dependencies": {
-<<<<<<< HEAD
-    "mocha": "~2.3.2",
-    "sinon": "latest"
-=======
     "mocha": "~2.3.2"
->>>>>>> 578f386cdfc85fbd576ba57a3fc87b7ce425761a
   },
   "repository":{}
 }

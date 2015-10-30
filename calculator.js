@@ -11,7 +11,6 @@ function substract(num1, num2){
   return num1 - num2;
 }
 
-<<<<<<< HEAD
 function multiply(num1, num2){
 	return num1 * num2;
 }

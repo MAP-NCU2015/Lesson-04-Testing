@@ -1,5 +1,4 @@
 var assert = require('assert');
-var sinon = require('sinon');
 var cal = require('../calculator.js')
 
 describe('Calculator', function(){
