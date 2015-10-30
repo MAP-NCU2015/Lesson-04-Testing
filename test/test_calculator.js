@@ -1,5 +1,6 @@
 var assert = require('assert');
 var cal = require('../calculator.js')
+var sinon = require('sinon');
 
 describe('Calculator', function(){
     it('add', function(){
@@ -22,5 +23,14 @@ describe('Calculator', function(){
 describe('Negative path', function(){
 	it('isNumber',function(){
 		assert.equal(false,cal.isNumber('13A'));
+	})
+})
+
+describe('Sinon', function(){
+	it('stub mul function',function(){
+		var stub = sinon.stub().returns(30);
+		var proxy = cal.mul(stub(), 5);
+		
+		assert.equal(150, proxy);
 	})
 })
