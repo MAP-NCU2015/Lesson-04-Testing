@@ -2,6 +2,17 @@ var assert = require('assert');
 var cal = require('../calculator.js')
 
 describe('Calculator', function(){
+
+  describe('isNumber', function(){
+  	it('input is number', function(){
+  	  assert.equal(true, cal.isNumber(513));
+ 	}),
+
+ 	it('input is not number', function(){
+ 	  assert.equal(false, cal.isNumber("asd12"));
+ 	})
+  }),
+
   describe('add', function(){
     it('add_positive', function(){
       assert.equal('2', cal.add(1, 1));
@@ -28,7 +39,7 @@ describe('Calculator', function(){
     }),
 
     it('multiply_negative', function(){
-      assert.equal('15', cal.multiply(-3, -5));
+      assert.equal('-15', cal.multiply(-3, 5));
     })
   }),
 
@@ -38,7 +49,7 @@ describe('Calculator', function(){
     }),
 
     it('divide_negative', function(){
-      assert.equal('5', cal.divide(-20, -4));
+      assert.equal('-5', cal.divide(20, -4));
     })
   }),
 
