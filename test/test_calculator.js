@@ -21,6 +21,6 @@ describe('Calculator', function(){
   	it('isNumber', function(){
 	      assert.equal(false, cal.isNumber('a'));
 	      assert.equal(true, cal.isNumber(1));
-   })
+   	})
+     })
 })
-}
