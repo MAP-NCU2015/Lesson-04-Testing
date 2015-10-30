@@ -5,7 +5,7 @@ describe('Calculator-Selenium', function() {
     it('add', function(done){
 	this.timeout(60000);
 	driver = new webdriver.Builder().withCapabilities(webdriver.Capabilities.firefox()).build();
-	driver.get("file:///" + __dirname + "/../index.html");
+	driver.get("http://longcat.tw/catLee/Webapps/Lesson-04-Testing");
 	driver.wait(function(){
 	    driver.findElement(webdriver.By.id('num1')).sendKeys('23');
 	    driver.findElement(webdriver.By.id('num2')).sendKeys('00');
