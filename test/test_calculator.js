@@ -1,5 +1,4 @@
 var assert = require('assert');
-<<<<<<< HEAD
 var sinon = require('sinon');
 var cal = require('../calculator.js')
 
@@ -65,14 +64,3 @@ describe('Calculator', function(){
     })
   })
 });
-=======
-var cal = require('../calculator.js')
-
-describe('Calculator', function(){
-  describe('add', function(){
-    it('add', function(){
-      assert.equal('2', cal.add(1, 1));
-    })
-  })
-})
->>>>>>> 578f386cdfc85fbd576ba57a3fc87b7ce425761a
