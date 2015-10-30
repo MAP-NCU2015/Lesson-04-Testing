@@ -20,9 +20,6 @@ window.onload = function(){
       document.getElementById('ans').value = multiply(num1, num2);
     }
 	else if (operator == "divide"){
-		if(num2==0){
-			document.getElementById('ans').value = "ERROR: divisor can't be zero."
-		}
       document.getElementById('ans').value = divide(num1, num2);
     }
     else {

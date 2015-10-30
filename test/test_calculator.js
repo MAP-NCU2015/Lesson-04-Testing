@@ -18,9 +18,5 @@ describe('Calculator', function(){
     it('divide', function(){
       assert.equal('3', cal.divide(24, 8));
     })
-	describe('divide', function(){
-    it('divide', function(){
-      assert.equal('ERROR: divisor can't be zero.', cal.divide(24, 0));
-    })
   })
 })
