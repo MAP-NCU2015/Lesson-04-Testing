@@ -28,5 +28,4 @@ describe('Calculator', function(){
       assert.equal('0', cal.isNumber('ABC'));
     })
   })
-  s
 })
