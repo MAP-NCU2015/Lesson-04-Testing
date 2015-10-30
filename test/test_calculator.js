@@ -1,5 +1,5 @@
 var assert = require('assert');
-//var sinon = require('sinon');
+var sinon = require('sinon');
 var cal = require('../calculator.js')
 
 describe('Calculator', function(){
@@ -40,11 +40,11 @@ describe('Calculator', function(){
     })
   })
   
-  /*describe('test with a stub', function(){
+  describe('test with a stub', function(){
     it('addARanNum', function(){
 		var randomMock = sinon.stub().returns(20);
 		assert.equal(2020, cal.addARanNum(20,randomMock));
     })
-  })*/
+  })
   
 })
