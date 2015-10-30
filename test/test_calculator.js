@@ -9,7 +9,7 @@ describe('Calculator', function(){
   })
   describe('substract',function(){
 	it('substract',function(){
-		assert.equal('-2',cal.substract(3,5));
+		assert.equal('1',cal.substract(2,1));
 	})
   })
   describe('multiply',function(){
