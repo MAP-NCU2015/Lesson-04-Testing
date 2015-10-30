@@ -9,16 +9,17 @@ describe('Calculator', function(){
     it('substract', function(){
       assert.equal('0', cal.substract(1, 1));
     })
-    it('mult', function(){
-      assert.equal('4', cal.mult(2, 2));
+    it('multiply', function(){
+      assert.equal('4', cal.multiply(2, 2));
     })
-    it('div', function(){
-      assert.equal('2', cal.div(2, 1));
+    it('divide', function(){
+      assert.equal('2', cal.divide(2, 1));
     })
   })
   
-  describe('Not a number', function(){
-	  it('NotaNumber', function(){
-      assert.equal(false, cal.isNumber('a'));
+  describe('isnumber', function(){
+  	it('isNumber', function(){
+	      assert.equal(false, cal.isNumber('a'));
+	      assert.equal(true, cal.isNumber(1));
    })
 })
