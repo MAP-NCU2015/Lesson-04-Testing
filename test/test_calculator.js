@@ -1,8 +1,8 @@
 var assert = require('assert');
 var cal = require('../calculator.js')
 var sinon=require('sinon')
-var webdriver = require('selenium-webdriver');
-var driver =undefined;
+//webdriver = require('selenium-webdriver');
+//var driver =undefined;
 describe('Calculator', function(){
     describe('add', function(){
         it('add', function(){
@@ -67,42 +67,23 @@ describe('Calculator', function(){
             assert.equal(39,cal.mul(Math.random(),1));
         })
     })
-    /*describe('selenium-webdriver',function(){
-      it('selenium-test',function(done){
-      var driver = new webdriver.Builder().
-      forBrowser('chrome').build();
-      driver.get("http://127.0.0.1:8000/")
-      var searchBox=driver.findElement(webdriver.By.id('num1'));
-      searchBox.sendKeys('1');
-      var searchBox2=driver.findElement(webdriver.By.id('num2'));
-      searchBox2.sendKeys('1');
-      driver.findElement(webdriver.By.id('go_btn')).click();
-      var searchBoxResult = driver.findElement(webdriver.By.id('ans'));
-      searchBoxResult.getAttribute('value').then(function(value){
-      console.log(value);
-      assert.equal(value,'3');
-      });
-    //driver.quit();    
-    })
+   /* describe('selenium-webdriver',function(){
+        it('selenium-test',function(done){
+            var driver = new webdriver.Builder().
+                forBrowser('chrome').build();
+                driver.get("http://127.0.0.1:8000/")
+                var searchBox=driver.findElement(webdriver.By.id('num1'));
+                searchBox.sendKeys('1');
+                var searchBox2=driver.findElement(webdriver.By.id('num2'));
+                searchBox2.sendKeys('1');
+                driver.findElement(webdriver.By.id('go_btn')).click();
+                var searchBoxResult = driver.findElement(webdriver.By.id('ans'));
+                searchBoxResult.getAttribute('value').then(function(value){
+                    console.log(value);
+                    assert.equal(value,'3');
+                });
+                //driver.quit();    
+        })
     })*/
-
-    describe('Google', function(){                                       
-        it('search by keyword', function(done){
-            this.timeout(10000);                                           
-            driver = new webdriver.Builder().                                            
-                withCapabilities(webdriver.Capabilities.firefox()).build(); 
-                driver.get('http://www.google.com');                 
-                driver.findElement(webdriver.By.name('q')).sendKeys('Firefox OS');        
-                driver.findElement(webdriver.By.name('btnK')).click();
-                //driver.findElement(webdriver.By.name('btnI')).click(); // I'm Feeling Lucky
-                driver.wait(function() {                                                     
-                    return driver.getTitle().then(function(title) {                            
-                        return title === 'Firefox OS - Google 搜尋';                          
-                    });                                                                        
-                }, 3000).then(function() {                                                   
-                    done()                                                                     
-                });                                                                          
-        })                                                                             
-    })       
 
 })
