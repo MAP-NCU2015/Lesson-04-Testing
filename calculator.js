@@ -7,9 +7,18 @@ function add(num1, num2){
   return num1 + num2;
 }
 
+function multiply(num1, num2){
+  return num1 * num2;
+}
+function div(num1, num2){
+  return num1 / num2;
+}
 function substract(num1, num2){
   return num1 - num2;
 }
 
 module.exports.add = add;
+module.exports.div = div;
+module.exports.mult = mult;
+module.exports.substract = substract;
 module.exports.isNumber = isNumber;
