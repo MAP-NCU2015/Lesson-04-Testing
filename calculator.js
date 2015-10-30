@@ -1,5 +1,5 @@
 function isNumber(numStr){
-  var re = /^[\-]?[0-9]+[\.]?[0-9]*$/; 
+  var re = /^-?[0-9]+.?[0-9]*$/;
   return re.test(numStr);
 }
 
@@ -12,11 +12,11 @@ function substract(num1, num2){
 }
 
 function multiply(num1 ,num2){
-return num1*num2;
+  return num1*num2;
 }
 
 function divide(num1 , num2){
-retuen num1/num2;
+  return num1/num2;
 }
 module.exports.add = add;
 module.exports.substract = substract;
