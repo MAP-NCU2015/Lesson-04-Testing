@@ -8,7 +8,9 @@
   "author": "Askeing Yen & Shing Lyu",
   "license": "MPLv2",
   "dependencies": {
-    "mocha": "~2.3.2"
+      "mocha": "~2.3.2",
+      "sinon": "1.17.2",
+      "selenium-webdriver": "2.48.0"
   },
   "repository":{}
 }
