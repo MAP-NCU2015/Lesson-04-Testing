@@ -10,12 +10,18 @@ window.onload = function(){
     var num1 = parseFloat(num1Str)
     var num2 = parseFloat(num2Str)
     var operator = document.getElementById('operator').value;
-    if (operator == "add"){
-      document.getElementById('ans').value = add(num1, num2);
+    if (operator == "addition"){
+      document.getElementById('ans').value = addition(num1, num2);
     }
     else if (operator == "substract"){
       document.getElementById('ans').value = substract(num1, num2);
     }
+    else if (operator == "multiply"){
+      document.getElementById('ans').value = multiply(num1, num2);
+    }
+    else if (operator == "divide"){
+      document.getElementById('ans').value = divide(num1, num2);
+    {
     else {
       alert("Bad operator!")
     }
