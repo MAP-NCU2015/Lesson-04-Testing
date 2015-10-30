@@ -1,7 +1,7 @@
 var assert = require('assert');
 var cal = require('../calculator.js')
 var sinon=require('sinon')
-var webdriver = require('selenium-webdriver');
+//var webdriver = require('selenium-webdriver');
 describe('Calculator', function(){
     describe('add', function(){
         it('add', function(){
