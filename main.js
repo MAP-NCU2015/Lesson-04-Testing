@@ -12,11 +12,13 @@ window.onload = function(){
     var operator = document.getElementById('operator').value;
     if (operator == "add"){
       document.getElementById('ans').value = add(num1, num2);
-    }
-    else if (operator == "substract"){
+    } else if (operator == "substract") {
       document.getElementById('ans').value = substract(num1, num2);
-    }
-    else {
+    } else if (operator == "multiple") {
+      document.getElementById('ans').value = multiple(num1, num2);
+    } else if (operator == "division") {
+      document.getElementById('ans').value = division(num1, num2);
+    } else {
       alert("Bad operator!")
     }
   }
