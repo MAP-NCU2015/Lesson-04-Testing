@@ -66,3 +66,47 @@ For more detail, please see the following articles.
 * https://help.github.com/articles/managing-branches-in-your-repository/
 * https://help.github.com/articles/creating-a-pull-request/
 * https://help.github.com/articles/using-pull-requests/
+
+
+## How to get the latest code from upstream repo
+
+### Add upstream
+
+First of all, add upstream by `git remote` command.
+
+```bash
+$ git remote add upstream https://github.com/MAP-NCU2015/Lesson-04-Testing.git
+```
+
+Then you can check the remote repo by `-v` option.
+
+```bash
+$ git remote -v
+upstream	https://github.com/MAP-NCU2015/Lesson-04-Testing.git (fetch)
+upstream	https://github.com/MAP-NCU2015/Lesson-04-Testing.git (push)
+origin	https://github.com/<YOUR_ACCT>/Lesson-04-Testing.git (fetch)
+origin	https://github.com/<YOUR_ACCT>/Lesson-04-Testing.git (push)
+```
+
+### Fetch the changes
+
+The most easy way is fetch all changes from all remote repo.
+
+```bash
+$ git fetch --all
+```
+
+### Merge to your branch
+
+Checkout to the branch which you want to merged, then merge the code from upstream's master branch.
+
+```bash
+$ git merge upstream master
+```
+
+You may have to fix the conflict after merge complete.
+If there is no conflict at your local repo, you can push the code to your fork repo. (Using `master` branch as example here.)
+
+```bash
+$ git push origin master
+```
