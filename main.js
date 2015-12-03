@@ -13,8 +13,14 @@ window.onload = function(){
     if (operator == "add"){
       document.getElementById('ans').value = add(num1, num2);
     }
-    else if (operator == "substract"){
-      document.getElementById('ans').value = substract(num1, num2);
+    else if (operator == "sub"){
+      document.getElementById('ans').value = sub(num1, num2);
+    }
+    else if (operator == "mul"){
+      document.getElementById('ans').value = mul(num1, num2);
+    }
+    else if (operator == "div"){
+      document.getElementById('ans').value = div(num1, num2);
     }
     else {
       alert("Bad operator!")
