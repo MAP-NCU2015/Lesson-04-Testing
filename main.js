@@ -16,8 +16,15 @@ window.onload = function(){
     else if (operator == "substract"){
       document.getElementById('ans').value = substract(num1, num2);
     }
+    else if(operator == "multilply"){
+      document.getElementById('ans').value = multilply(num1 , num2);
+    }
+    else if(operator == "divide"){
+      document.getElementById('ans').value = divide(num1 , num2);
+    }
     else {
       alert("Bad operator!")
     }
   }
 }
+
