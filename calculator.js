@@ -1,5 +1,5 @@
 function isNumber(numStr){
-  var re = /^[0-9\.]+$/; 
+    var re = /^[+-]?[0-9]+\.{0,1}[0-9]*$/;
   return re.test(numStr);
 }
 
